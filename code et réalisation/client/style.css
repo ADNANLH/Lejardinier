@@ -1,0 +1,190 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter';
+    background-color: #FCF9F3;
+}
+.navbar {
+    background: #398378;
+    height: 107px;
+    box-shadow: 3px 3px 21px #8a8888;
+}
+
+.navbar-brand {
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 129px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 24px;
+}
+
+.link-0 {
+    color: white;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+.link-0:hover {
+    color: #89e4d7;
+   
+}
+
+
+.notification-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+
+/* Media queries */
+@media (max-width: 991px) {
+    .navbar {
+        height: auto;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        padding: 12px;
+    }
+
+    .link {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .notification-badge {
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+}
+
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F3F0E9;
+    }
+
+
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #398378;
+        margin-bottom: 20px;
+    }
+
+    .inputs {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-size: 20px;
+        color: #398378;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select.form-control.form-select.border-0.py-3 {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: rgba(57, 131, 120, 0.1);
+        color: #398378c9;
+    }
+
+    ::placeholder {
+        color: rgba(57, 131, 120, 0.74);
+    }
+
+    option {
+        background-color: rgba(57, 131, 120, 0.1);
+        color: #398378c9;
+    }
+
+    .p-t-30 {
+        margin-top: 30px;
+    }
+
+    .btn--radius {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        background-color: #398378;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn--radius:hover {
+        background-color: #00695B;
+    }
+
+    .error {
+        color: #f00;
+        margin-bottom: 10px;
+    }
+
+    .alert-danger {
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        color: #721c24;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+        .card-body {
+            padding: 30px;
+            margin-top: 100px;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select.form-control.form-select.border-0.py-3 {
+            font-size: 14px;
+        }
+    }
